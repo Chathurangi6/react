@@ -1,0 +1,89 @@
+.tr_Application {
+    border-bottom: 1px solid #ccc;
+}
+
+.progressbar_ApplicationView {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    z-index: 3;
+    
+    
+    
+   
+}
+
+.progressbar_ApplicationView li {
+    list-style-type: none;
+    /* color: white; */
+    color:rgb(175, 173, 173);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    /* width: 33.33%; */
+    text-align: center;
+    width:20%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+    z-index: 2;
+    
+}
+
+.progressbar_ApplicationView li:before {
+    content: counter(step);
+    counter-increment: step;
+    font-weight: bold;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    /* background: white; */
+    background: rgb(212, 209, 209);
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+    cursor: pointer;
+    z-index: 1;
+    
+    
+}
+
+/*progressbar connectors*/
+.progressbar_ApplicationView li:after {
+    content: '';
+    width: 100%;
+    align-self: auto;
+    height: 2px;
+    /* background: white; */
+    background: rgb(212, 209, 209);
+    position: absolute;
+    /* left: -45%; */
+    right: 46%;
+    top: 9px;
+    z-index: -1;
+     /* put it behind the numbers */ 
+}
+
+.progressbar_ApplicationView  li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+    
+    
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+.progressbar_ApplicationView  li.completed:before, .progressbar_ApplicationView li.completed:after {
+    background: #32CD32;
+    color: white;
+    /* color:rgb(212, 209, 209); */
+}
+
+.progressbar_ApplicationView  li.active:before {
+    background: #ee0979;
+    color: white;
+    /* color:rgb(212, 209, 209); */
+}

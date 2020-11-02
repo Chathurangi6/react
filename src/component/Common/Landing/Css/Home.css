@@ -1,0 +1,26 @@
+#content-bodyy{
+    position: relative;
+    text-align: center;
+    background:url('../../../../assets/images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-size: 100% 600px; */
+    background-size: 100% 700px;
+}
+#contentbody{
+  background-color:whitesmoke;
+ 
+}
+#sideimg{
+    height:85%;
+    width: 85%;
+}
+#accocard{
+    color:black
+}
+
+#x{
+    height:40%;
+    width: 40%;
+}

@@ -1,0 +1,26 @@
+.content2{
+    background-image: url('../../../assets/images/Energía-Brasil.jpg');
+    
+    min-height: 700px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: relative;
+}
+
+.form-area{
+    padding: 30px 30px;
+    margin-left: 7vh;
+    margin-left: 7vh;
+    -webkit-box-shadow: 1px 7px 21px 0px rgba(163,155,163,1);
+    -moz-box-shadow: 1px 7px 21px 0px rgba(163,155,163,1);
+    box-shadow: 1px 7px 21px 0px rgba(163,155,163,1);
+    width:90%;
+    height: 50%;
+    
+    background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}

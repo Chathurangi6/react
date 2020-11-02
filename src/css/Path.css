@@ -1,0 +1,49 @@
+.path:link{
+    font-size: 18px;
+    background-color: transparent;
+   } 
+   .path:visited {
+    color: rgb(43, 31, 214);
+    background-color: transparent;
+    text-decoration: none;
+  }
+   .path:hover{
+    color: rgb(192, 34, 131);
+    background-color: transparent;
+    text-decoration: none; 
+   } 
+   .path:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+ 
+
+
+  .path2:link{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+   } 
+   .path2:visited {
+    color: rgb(43, 31, 214);
+    background-color: transparent;
+    text-decoration: none;
+  }
+   .path2:hover{
+    color: rgb(192, 34, 131);
+    background-color: transparent;
+    text-decoration: none; 
+   } 
+   
+  .padding{
+    padding-left: 30px;
+    padding-top: 20px;
+
+  }
+  .Possition{
+    padding-left: 40px;
+    padding-right: 40px;
+    
+
+  }

@@ -1,0 +1,121 @@
+define a fixed width for the entire menu
+
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5; 
+    transition: all 0.3s;
+    position: fixed;
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    
+  }
+  
+  /* reset our lists to remove bullet points and padding */
+  
+  .mainmenu,
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+    
+  }
+  .sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+    color: #fff;
+  }
+  
+  a[data-toggle="collapse"] {
+      position: relative;
+  }
+  
+  /* make ALL links (main and submenu) have padding and background color */
+  
+  .mainmenu a,
+  .mainmenu label {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(22, 20, 20);
+    background: #6d7fcc;
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  .mainmenu input {
+    display: none;
+  }
+  
+  
+  /* add hover behaviour */
+  
+  .mainmenu a:hover {
+    background-color: #fff;
+    color: #6d7fcc;
+  }
+  
+  
+  /* when hovering over a .mainmenu item,
+    display the submenu inside it.
+    we're changing the submenu's max-height from 0 to 200px;
+  */
+  
+  .mainmenu :checked+.submenu {
+    display: block;
+    max-height: 200px;
+  }
+  
+  
+  /*
+    we now overwrite the background-color for .submenu links only.
+    CSS reads down the page, so code at the bottom will overwrite the code at the top.
+  */
+  
+  .submenu ul ul li a {
+    color: #fff;
+      background: #6d7fcc;
+  }
+  
+  
+  /* hover behaviour for links inside .submenu */
+  
+  .submenu  ul li a:hover {
+    color: rgb(40, 66, 172);
+      background: #fff
+  }
+  
+  
+  /* this is the initial state of all submenus.
+    we set it to max-height: 0, and hide the overflowed content.
+  */
+  
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+  }
+  
+  .contentt {
+    margin-left: 300px; /* Same as the width of the sidebar */
+    padding: 10% 5% 0px 5%;
+  }
+  
+  .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  

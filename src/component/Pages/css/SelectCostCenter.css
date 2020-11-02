@@ -1,0 +1,41 @@
+.content{
+    background-image: url('../../../assets/images/d.png');
+    min-height: 100vh;
+    margin-top: "-0.4vh";
+    background-position: center;
+    
+ }
+
+ 
+ .book_butto5
+{
+    
+	height: 6vh;
+	background:#850a0a;
+	text-align: center;
+	color: #EFF707;
+  
+}
+.book_button5:hover
+{
+	
+	background:rgb(174, 179, 35);
+	color:#850a0a;
+}
+
+
+.book_button6
+{
+    
+	height: 6vh;
+	background:#850a0a;
+	text-align: center;
+	color: #EFF707;
+  
+}
+.book_button6:hover
+{
+	
+	background:rgb(174, 179, 35);
+}
+

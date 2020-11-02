@@ -1,0 +1,111 @@
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    /* color: white; */
+    color:rgb(175, 173, 173);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    /* width: 33.33%; */
+    text-align: center;
+    width: 15%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    font-weight: bold;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    /* background: white; */
+    background: rgb(212, 209, 209);
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+    cursor: pointer;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    /* background: white; */
+    background: rgb(212, 209, 209);
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.completed:before, #progressbar li.completed:after {
+    background: #00ff00;
+    color: white;
+    /* color:rgb(212, 209, 209); */
+}
+
+#progressbar li.active:before {
+    background: #ee0979;
+    color: white;
+    /* color:rgb(212, 209, 209); */
+}
+
+.formBorder {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    /* margin: 0 10%; */
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+.formBorder h4{
+    text-align: center;
+    /* font-size: 18px; */
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+}
+
+.line {
+    border: 1.2px solid rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 0.5px 0.5px rgba(0, 0, 0, 0.1);   */
+    /* box-sizing: border-box; */
+    width: 100%; 
+    position: relative;
+}
+
+.multiStepForm .form-control[readonly]{
+    background-color: white;
+}
+
+.multiStepForm .form-control:disabled{
+    background-color: white;
+}

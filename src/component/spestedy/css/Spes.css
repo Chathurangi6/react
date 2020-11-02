@@ -1,0 +1,39 @@
+.book_button5
+{
+	
+	background:#880e4f;
+	text-align: center;
+	color: #fceb07;
+	
+}
+.book_button5:hover
+{
+	color: #880e4f;
+	background:#fceb07;
+}
+
+.check_box1
+{
+	background:#FFFFFF;
+	
+}
+.check_box1:hover
+{
+	color: #880e4f;
+	background:#ebe485;
+}
+.check_box1:hover:active
+{
+	color: #880e4f;
+	background:#fa2205;
+}
+
+.scrollbar {
+	position: relative;
+	height: 50vh;
+	overflow: auto;
+	
+}
+.table-wrapper-scroll-y {
+	display: block;
+}

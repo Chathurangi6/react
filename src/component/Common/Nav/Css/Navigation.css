@@ -1,0 +1,68 @@
+
+.navColor{
+    background-image: linear-gradient(to bottom right,#8f0b0b,#460606);
+}
+    
+/* .navbar-light .navbar-brand{
+    font-weight:bold;
+} */
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffff;
+    /* font-weight: bold; */
+/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+font-family: serif;
+    font-size: 18px;
+ 
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(240, 239, 239, 0.9);
+    /* font-weight:800; */
+}
+
+.dropdown-toggle:after { content: none }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    background-color: rgb(8, 8, 8);
+    
+} 
+.dropdown-submenu{
+    padding: 0.25px;
+    padding-left:2px;
+   
+}
+.dropdown-submenu:hover{
+   background-color: rgba(238, 227, 227, 0.5);
+  
+}
+  
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    background-color: rgb(10, 10, 10);
+   
+}
+
+.dropdown-submenu a::after {              
+    /* transform: rotate(-90deg); */
+    position: absolute;
+    right: 20px;
+    top: 1.35em;
+    
+  }
+
+.sessionLink1{
+   
+    text-decoration: underline;
+    color: #ffff;
+    background-color: #420303;  
+    /* background-color: #080808;   */
+    /* background-image: linear-gradient(to bottom right,#8f0b0b,#460606); */
+    } 
+.admin{
+margin-left:200px;
+
+
+}
+

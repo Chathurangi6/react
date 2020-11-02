@@ -1,0 +1,148 @@
+.height_application{
+
+    height: 50px;
+}
+
+.card_application{
+    
+    position: relative;
+    width:100%;
+    margin:0 0 0 0;
+    padding: 0 0 50px 0;
+
+    /* padding: 0 0 10px 0;
+    margin: 0 0 0 0;
+    width: 1250px; */
+   
+   } 
+
+.button_application {
+
+    padding: 5px 39px;
+    position:absolute; right:0;
+   
+    
+}
+
+.jum_application{
+
+    background-color: white;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 0rem;
+    
+
+}
+
+.jum_application_form{
+
+    background-color: white;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 0rem;
+    border: 1px solid #0275d8;
+
+}
+
+.progressbar_ApplicationAddEdit {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    z-index: 3;
+   
+    
+    
+    
+   
+}
+
+.progressbar_ApplicationAddEdit li {
+    list-style-type: none;
+    /* color: white; */
+    color:rgb(175, 173, 173);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    /* width: 33.33%; */
+    text-align: center;
+    width: 16%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+    z-index:2;
+    
+    
+}
+
+.progressbar_ApplicationAddEdit li:before {
+    content: counter(step);
+    counter-increment: step;
+    font-weight: bold;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    /* background: white; */
+    background: rgb(212, 209, 209);
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+    cursor: pointer;
+    z-index: 1;
+   
+    
+   
+    
+    
+}
+
+/*progressbar connectors*/
+.progressbar_ApplicationAddEdit li:after {
+    content: '';
+    width: 100%;
+    align-self: auto;
+    height: 2px;
+    /* background: white; */
+    background: rgb(212, 209, 209);
+    position: absolute;
+    right: 45%;
+    /* left:-50%; */
+    top: 9px;
+    z-index: -1;
+     /* put it behind the numbers */ 
+}
+
+.progressbar_ApplicationAddEdit li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+    
+    
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+.progressbar_ApplicationAddEdit li.completed:before, .progressbar_ApplicationAddEdit li.completed:after {
+    background: #32CD32;
+    color: white;
+    /* color:rgb(212, 209, 209); */
+}
+
+.progressbar_ApplicationAddEdit li.active:before {
+    background: #ee0979;
+    color: white;
+    /* color:rgb(212, 209, 209); */
+}
+
+.img_application {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150;
+    height: 70;
+  }

@@ -1,0 +1,22 @@
+  .content1{
+    background-image: url('../../../assets/images/d.png');
+    min-height: 100vh;
+    margin-top: "-0.4vh";
+    background-position: center;
+    
+ }
+
+ .book_button4
+{
+    
+	height: 6vh;
+	background:#850a0a;
+	text-align: center;
+	color: #FFFFFF;
+  margin-top: -3vh;
+}
+.book_button4:hover
+{
+	
+	background:rgb(174, 179, 35);
+}

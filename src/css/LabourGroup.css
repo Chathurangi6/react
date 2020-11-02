@@ -1,0 +1,45 @@
+/* .border-left{ */
+    /* background-color:lightgray; */
+    /* border: solid; */
+    /* border-width: 1px; */
+    /* border-radius: 10px; */
+    /* border-color: lightgrey; */
+    /* border-color: black; */
+
+/* } */
+/* .border-right{
+    /* background-color:lightgray; */
+    /* border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: lightgrey; */
+
+/* } */ 
+.block-row{
+    padding-left: 20px;
+    padding-right:20px;
+}
+/* .column-border{
+    border-radius: 10px;
+} */
+.labour-column-border{
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+}
+.custom-scrollbar {
+    position: relative;
+    height: 320px;
+    overflow: auto;
+    padding-left: 20px;
+    }
+/* .button-group{
+    padding-left: 20px;
+}  */
+/* .table-wrapper-scroll-y {
+/* dislay: block; */
+/* } */ 
+/* .find-block{
+    border:solid;
+    padding:5px;
+} */
